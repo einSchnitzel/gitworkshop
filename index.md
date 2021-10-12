@@ -10,6 +10,9 @@
 	git config --global user.email "email@something.com"
 
 ### Use local instead of global if it should be with this folder only
+	
+	git config --local user.name "name"
+	git config --local user.email "email@something.com"
 
 ## Add file
 ### All in folder
@@ -22,7 +25,7 @@
 git rm --cached <filename>
 
 ## Commit a new version
-	git commit -m "message"
+	git commit -m "added filename"
 
 ## Git status and log
 ### Check what is added and commited
@@ -31,3 +34,10 @@ git rm --cached <filename>
 ### Check the log and history
 	git log
 	git log <filename>
+
+## Git diff
+### Displays the differences between last commit and current version
+### Differences may be displayed using  the branches in vscode as well
+### You can exit using q
+	git diff
+
