@@ -1,6 +1,6 @@
 # Git workshop 
 
-## Repo initialise
+## Initialise repository
 
 	git init
 
@@ -9,10 +9,25 @@
 	git config --global user.name "name"
 	git config --global user.email "email@something.com"
 
-### Use local instead ofif it should be just beyond this folder
+### Use local instead of global if it should be with this folder only
 
 ## Add file
-### all in folder
+### All in folder
 	git add *
-###	one file
+###	One file
 	git add <filename>
+
+## Remove added file
+
+git rm --cached <filename>
+
+## Commit a new version
+	git commit -m "message"
+
+## Git status and log
+### Check what is added and commited
+	git stauts
+
+### Check the log and history
+	git log
+	git log <filename>
