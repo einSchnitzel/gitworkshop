@@ -49,8 +49,29 @@
 ### List all branches
 	git branch
 
-## Switch branch to main, everything is now on main as well
+## Switch branch to another branch
+### everything is now on main as well
 	git checkout main
 
 ## Checkout to a previous branch
-### sometimes there may be issues when returning to the 
+### sometimes there may be issues when returning due to changes, conflicts need to be sorted then
+
+## Connect remote repositories to github via ssh
+### Origin is just a name
+	git remote add origin git@github.com:something/path.git
+	git branch -M main
+	git push -u origin main
+
+## Renaming remote repositories
+
+	git remote rename currentname newname
+
+## List remote directories
+	git remote -v
+
+## Change  remote URL to ssh 
+git remote set-url origin git@github.com:something/path.git
+## Change  remote URL to htmls
+git remote set-url origin https://github.com/something/path.git
+
+## It is possible to push to 2 remotes within one repo
