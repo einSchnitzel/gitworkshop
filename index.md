@@ -44,6 +44,17 @@
 ### You can exit using q
 	git diff
 
+## Connecting repositories to github via ssh
+### Origin is just a name
+	git remote add origin git@github.com:something/path.git
+	git branch -M master
+	
+	
+## Pusing to a remote repository
+### everything added and commited is moved to a remote repositrory (storage on another computer)
+### It is possible to push to 2 remotes within one repo, I still need to figure out how.
+	git push -u origin main
+	
 ## Create a new branch
 	git branch main
 ### List all branches
@@ -56,12 +67,6 @@
 ## Checkout to a previous branch
 ### sometimes there may be issues when returning due to changes, conflicts need to be sorted then
 
-## Connect remote repositories to github via ssh
-### Origin is just a name
-	git remote add origin git@github.com:something/path.git
-	git branch -M main
-	git push -u origin main
-
 ## Renaming remote repositories
 
 	git remote rename currentname newname
@@ -70,8 +75,7 @@
 	git remote -v
 
 ## Change  remote URL to ssh 
-git remote set-url origin git@github.com:something/path.git
+	git remote set-url origin git@github.com:something/path.git
 ## Change  remote URL to htmls
-git remote set-url origin https://github.com/something/path.git
+	git remote set-url origin https://github.com/something/path.git
 
-## It is possible to push to 2 remotes within one repo
